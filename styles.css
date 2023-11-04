@@ -1,0 +1,521 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+::selection {
+  background-color: #555555; /* Change this to the desired color */
+  color: #ebebeb; /* Change this to the desired text color */
+}
+
+header {
+  background-color: #ebebeb;
+  padding: 10px;
+  margin: 0.5% 5px 0px 5px;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 2px 2px 3px rgba(0, 0, 0, 0.2);
+  height: 6.3%;
+  border-radius: 10px;
+}
+
+.logo {
+  font-family: 'Manrope';
+  margin-left: 40px;
+  margin-right: auto;
+  font-size: 18px;
+}
+
+.selected {
+  text-decoration: underline #555555;
+  text-underline-position: under;
+  line-height: 1;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.menu li u{
+  color: #43AA8B;
+  text-decoration: none;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  text-decoration: underline #aeaeae;
+  text-underline-position: under;
+  line-height: 1;
+}
+
+.menu a:visited {
+  color: #555555;
+}
+
+.menu a:link {
+  color: #555555;
+}
+
+.content {
+  background-color: #ebebeb;
+  padding: 10px 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.7% 5px 0px 5px;
+  height: 76.3%;
+  box-shadow: 1px 2px 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.image{
+  margin-top: 5%;
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+
+.content1 {
+  width: 50%;
+  height: 100%;
+}
+
+.content img {
+  display: flex;
+  width: 350px;
+  height: auto;
+  float: right;
+  margin-bottom: 0;
+  max-width: 100%;
+  height: auto;
+  margin-right: 100%
+}
+
+.content h2 {
+  display: flex;
+  font-family: 'Manrope',sans-serif;
+  margin-top: 5%;
+  margin-left: 40px;
+  font-weight: 400;
+  font-size: 50px;
+  margin-right: 5%;
+}
+
+.content p {
+  display: flex;
+  margin-left: 40px;
+  margin-right: 5%;
+  font-size: 15px;
+}
+
+.scrolling-div-project {
+  gap: 2px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* This sets up 4 columns */
+  width: 77%; /* You may adjust the width based on the available space and your design */
+  margin: 0 auto;
+  align-items: flex-start; 
+  margin-top: 5px;
+  margin-bottom: 20px;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #999999 #f0f0f0;
+}
+
+.scrolling-div-project::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrolling-div-project::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.scrolling-div-project::-webkit-scrollbar-thumb {
+  background-color: #999999;
+  border-radius: 4px;
+}
+
+.scrolling-div-project::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
+}
+
+.scrolling-div-blog {
+  gap: 2px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* This sets up 4 columns */
+  width: 80%; /* You may adjust the width based on the available space and your design */
+  margin: 0 auto;
+  align-items: flex-start; 
+  margin-top: 5px;
+  margin-bottom: 20px;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #999999 #f0f0f0;
+}
+
+.scrolling-div-blog::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrolling-div-blog::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.scrolling-div-blog::-webkit-scrollbar-thumb {
+  background-color: #999999;
+  border-radius: 4px;
+}
+
+.scrolling-div-blog::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
+}
+
+
+footer {
+  background-color: #ebebeb;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 0.7% 5px 0 5px;
+  height: 5.3%;
+  box-shadow: 1px 2px 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.low-title {
+  font-family: 'Manrope';
+  margin-left: 40px;
+  margin-right: auto;
+  font-size: 18px;
+}
+
+
+.blog-box {
+  background-color: #f3f3f3;
+  width: 95%; 
+  margin-top: 5px;
+  max-height: 400px; 
+  box-sizing: border-box; 
+  border: 1px solid #ccc; 
+  overflow-y: auto; 
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  flex-direction: column; 
+  gap: 10px; 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.blog-box img {
+  max-width: 100%; /* ensure image fits within the card */
+  height: auto;
+  margin: 0 auto 10px; /* centering the image and adding margin to the bottom */
+  border-radius: 10px;
+  border: none; /* removing the border for a cleaner look */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.blog-title {
+  font-family: 'Manrope';
+  font-size: 18px;
+  margin-bottom: 8px;
+  text-align: center; /* center the title */
+  color: #333;
+}
+
+.blog-box a {
+    color: inherit; /* Makes sure the text color remains the same as the parent */
+    text-decoration: none; /* Removes underline */
+    font-family: 'Manrope'; /* Or whichever font you prefer */
+    display: block; /* This will make the entire box clickable */
+}
+
+.blog-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow: hidden; /* in case the text is too long */
+  text-overflow: ellipsis; /* add ... at the end if it's cut off */
+}
+
+/* Add smooth transition for hover effects */
+.blog-box, .blog-box img {
+  transition: all 0.3s ease;
+}
+
+/* A subtle hover effect */
+.blog-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.blogs-welcome {
+  text-align: left;
+  width: 270px;
+}
+
+
+.blog-single {
+  background-color: #f3f3f3;
+  max-width: 1000px;
+  margin: 2em auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  height: calc(100vh - 100px); /* Adjusting for header and some margin */
+}
+
+.blog-single .blog-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ebebeb;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* A light background to make it stand out a bit more */
+}
+
+.blog-intro h1,
+.blog-content h2 {
+    font-family: 'Manrope';
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.blog-intro img {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.blog-intro p,
+.blog-content p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 80%;
+    text-align: justify;
+}
+
+.blog-content {
+  margin-top: 30px;
+}
+
+.blog-content h2 {
+  margin-top: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+} 
+
+.project-box {
+  background-color: #f3f3f3;
+  width: 95%; 
+  margin-top: 5px;
+  max-height: 400px; 
+  box-sizing: border-box; 
+  border: 1px solid #ccc; 
+  overflow-y: auto; 
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  flex-direction: column; 
+  gap: 10px; 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.project-box img {
+  max-width: 60%; /* ensure image fits within the card */
+  height: auto;
+  margin: 0 auto 10px; /* centering the image and adding margin to the bottom */
+  border-radius: 10px;
+  border: none; /* removing the border for a cleaner look */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.project-title {
+  font-family: 'Manrope';
+  font-size: 18px;
+  margin-bottom: 8px;
+  text-align: left; /* center the title */
+  color: #333;
+}
+
+.project-box a {
+    color: inherit; /* Makes sure the text color remains the same as the parent */
+    text-decoration: inherit; /* Removes underline */
+    font-family: 'Manrope'; /* Or whichever font you prefer */
+    display: block; /* This will make the entire box clickable */
+}
+
+.project-description {
+  color: #666;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.4;
+  width: 35%  ;
+  overflow: hidden; /* in case the text is too long */
+  text-overflow: ellipsis; /* add ... at the end if it's cut off */
+}
+
+/* Add smooth transition for hover effects */
+.project-box, .blog-box img {
+  transition: all 0.3s ease;
+}
+
+/* A subtle hover effect */
+.project-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-welcome {
+  text-align: left;
+  width: 270px;
+}
+
+
+.project-single {
+  background-color: #f3f3f3;
+  max-width: 1000px;
+  margin: 2em auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  height: calc(100vh - 100px); /* Adjusting for header and some margin */
+}
+
+.project-single .project-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ebebeb;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* A light background to make it stand out a bit more */
+}
+
+.project-intro h1,
+.project-content h2 {
+    font-family: 'Manrope';
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.project-intro img {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-intro p,
+.project-content p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 80%;
+    text-align: justify;
+}
+
+.project-content {
+  margin-top: 30px;
+}
+
+.project-content h2 {
+  margin-top: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+} 
+
+
+
+@media screen and (max-width: 750px) {
+  
+  header{
+    height: 5%;
+    font-size: 8px;
+    margin-top: 1%;
+  }
+
+  .menu li {
+
+    margin-left: 10px;
+    margin-right: 4px;
+  }
+
+  .logo{
+    margin-left: 2px;
+    font-size: 12px;
+  }
+
+  .content{
+    margin-top: 2%;
+    height: 80%;
+    -ms-flex-align: center;
+  }
+
+  .content h2 {
+    margin-left: 8px;
+  }
+
+  .content p{
+    margin-left: 8px;
+  }
+
+  footer {
+    margin-top: 2%;
+    height: 5%;
+    margin-bottom: 2%;
+  }  
+}
