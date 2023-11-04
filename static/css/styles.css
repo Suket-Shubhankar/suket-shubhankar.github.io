@@ -110,6 +110,7 @@ header {
 
 .content img {
   display: flex;
+  object-fit: cover;
   width: 350px;
   height: auto;
   float: right;
