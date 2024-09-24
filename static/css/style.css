@@ -248,6 +248,9 @@ footer p {
 }
 
 @media (max-width: 1024px) {
+    main {
+        padding: 1rem;
+    }
     header {
         flex-direction: column;
         text-align: center;
