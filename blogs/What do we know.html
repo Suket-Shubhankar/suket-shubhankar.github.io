@@ -3,40 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> | Suket Shubhankar</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
             rel="stylesheet"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Redacted+Script:wght@300;400;700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Jacquard+12&family=Libre+Barcode+39+Text&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-        <link
-            href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap"
-            rel="stylesheet"
-        />
-        <title></title>
         <link rel="stylesheet" href="/static/css/style.css" />
-        <!-- Ensure you have this CSS file in your static directory -->
     </head>
     <body>
         <header>
-            <h1>Suket Shubhankar</h1>
+            <h1><a href="/">Suket Shubhankar</a></h1>
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -46,14 +24,29 @@
             </nav>
         </header>
         <main>
-<a href="/blogs" class="back-link">
+
+<a href="/blogs" class="back-link" aria-label="Back to blogs">
     <img
         class="back-icon"
-        src="../static/img/arrow-back-outline.svg"
+        src="/static/img/arrow-back-outline.svg"
         alt="Back to blogs"
     />
 </a>
-<div class="blog-post"><h1>What do we know</h1>
+
+<article class="blog-post">
+    <img
+        src=""
+        alt="Image for "
+        class="blog-detail-image"
+        style="
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            object-position: top center;
+        "
+    />
+
+    <div class="blog-content"><h1>What do we know</h1>
 
 <h2>Chore of knowing</h2>
 
@@ -119,6 +112,17 @@
 First, understand that learning is a wondrous journey, not the chore our institutions have conditioned us to believe. Recognize that we are victims of a mentally violent process.
 Second to go back home, to the wondrous abstract mental places of young where lived everything, and none could escape the punishment of our imaginations.</p>
 </div>
+</article>
+
 </main>
+        <footer>
+            <div class="thank-you">
+                <span class="heart" aria-hidden="true">🩷</span>
+                <span>Thank you for the visit</span>
+            </div>
+            <p>
+                &copy;  Suket Shubhankar. All rights reserved.
+            </p>
+        </footer>
     </body>
 </html>
